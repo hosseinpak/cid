@@ -13,6 +13,40 @@
   <meta name="description" content="Browse and redeem exclusive discounts, voucher credits, limited edition NFTs, token airdrops, &amp; more with CoinGecko Candy" />
   
   
+            z-index: 1031;
+            top: 15px;
+            right: 15px;
+          }
+
+          #nprogress .spinner-icon {
+            width: 18px;
+            height: 18px;
+            box-sizing: border-box;
+
+            border: solid 2px transparent;
+            border-top-color: var(--_1x8rin29);
+            border-left-color: var(--_1x8rin29);
+            border-radius: 50%;
+
+            -webkit-animation: nprogress-spinner 400ms linear infinite;
+                    animation: nprogress-spinner 400ms linear infinite;
+          }
+
+          .nprogress-custom-parent {
+            overflow: hidden;
+            position: relative;
+          }
+
+          .nprogress-custom-parent #nprogress .spinner,
+          .nprogress-custom-parent #nprogress .bar {
+            position: absolute;
+          }
+
+          @-webkit-keyframes nprogress-spinner {
+            0%   { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+          }
+          @keyframes nprogress-spinner
   <!-- OptanonConsentNoticeStart -->
 <script
 
